@@ -1,0 +1,6 @@
+#animacao {
+  -moz-animation-duration: 0.8s;
+  /*Substituir os vendor pelo prefixo dos navegadores*/
+  /*-vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;*/
+}
