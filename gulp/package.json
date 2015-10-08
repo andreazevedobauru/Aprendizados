@@ -1,0 +1,11 @@
+{
+  "name": "aprendendo",
+  "version": "1.0.0",
+  "description": "Aprendendo Gulp",
+  "author": "André Azevedo<andre.felipe.az@gmail.com>",
+  "devDependencies": {
+ "gulp": "~3.9.0",
+ "gulp-uglify" : "*",
+ "gulp-concat" : "*"
+  }
+}
