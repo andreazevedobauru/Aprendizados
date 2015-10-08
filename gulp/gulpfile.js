@@ -4,7 +4,7 @@
  */
 var js  = [
     './js-source/vendor/jquery/*',         // Todos os arquivos do diretório Jquery
-    './js-source/vendor/bootstrap/*',     // Todos os arquivos do diretório bootstrap e sub diretórios
+    './js-source/vendor/bootstrap/*.*',     // Todos os arquivos do diretório bootstrap e sub diretórios
     './js-source/main.js'                  // Arquivo único
 ];
  
