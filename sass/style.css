@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*
+ * Fonte: http://nandomoreira.me/sass-parte-4-funcoes/
+ */
+body {
+  background-color: #f1f1f1;
+  font-size: 16px; }
+
+a {
+  color: #006699; }
+  a:hover, a:focus {
+    text-decoration: none;
+    border-top: 1px dashed #006699; }
+
+/*
+ * Mixins
+ */
+/*  
+ * Funções
+ */
+.card {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  width: 700px; }
+
+/*
+* Placeholders
+*/
+.post-heading, .post-page, body {
+  background-color: #fff; }
+
+.post-heading, .post-page {
+  font-size: 52px;
+  padding: 30px 15px; }
+
+.post-heading {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 60px; }
+
+.post-page {
+  color: #333; }
+
+/*# sourceMappingURL=style.css.map */
