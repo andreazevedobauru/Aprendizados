@@ -1,0 +1,72 @@
+/*
+ * Fonte: http://nandomoreira.me/sass-parte-4-funcoes/
+ * comando: sass --watch style.scss:style.css
+ */
+
+$cor: #006699;
+$bg: #f1f1f1;
+
+
+body{
+	background-color: $bg;
+	font-size: 16px;
+}
+
+a{
+	color: $cor;
+	&:hover,
+	&:focus{
+		text-decoration: none;
+		border-top: 1px dashed $cor;
+	}
+}
+
+/*
+ * Mixins
+ */
+@mixin border-radius($radius){
+	-webkit-border-radius:	$radius;
+     -moz-border-radius: 	$radius;
+      -ms-border-radius: 	$radius;
+          border-radius: 	$radius;
+}
+/*  
+ * Funções
+ */
+@function soma($a, $b: 0){
+	$c: $a + $b;
+	@return $c;
+}
+
+.card{
+	@include border-radius(4px);
+	width: soma(500px, 200);
+
+}
+
+/*
+* Placeholders
+*/
+%background-white{
+	background-color: #fff;
+}
+
+%heading-big{
+	font-size: 52px;
+  	padding: 30px 15px;
+  	@extend %background-white;
+}
+
+body{
+	@extend %background-white;
+}
+
+.post-heading{
+	@extend %heading-big;
+  	border-bottom: 1px solid #eee;
+  	margin-bottom: 60px;
+}
+.post-page {
+  	@extend %heading-big;
+  	color: #333;
+}
