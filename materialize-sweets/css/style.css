@@ -62,11 +62,12 @@ footer.page-footer {
 .bg-listrado{
   background: repeating-linear-gradient(
   90deg,
-  #fff,
+  #F9A4A0,
+  #F9A4A0 20px,
   #fff 20px,
-  #eee 20px,
-  #eee 40px
+  #fff 40px
   );
+
 }
 
 .bg-bolinhas-rosas{
