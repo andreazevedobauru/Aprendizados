@@ -6,3 +6,4 @@ Homestead.json
 .idea/*
 /vendor
 .env
+/resources/bower_components

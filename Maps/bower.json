@@ -1,0 +1,20 @@
+{
+  "name": "Maps Aprendizados",
+  "version": "0.0.0",
+  "homepage": "https://github.com/andreazevedobauru/Aprendizados",
+  "authors": [
+    "André Felipe Azevedo <andre.felipe.az@gmail.com>"
+  ],
+  "description": "Frontend do Gerenciado de Projetos",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/bower_components"
+  ],
+  "dependencies": {
+    "angular": "1.4.1",
+    "materialize-css": "0.97.3"
+  }
+}
