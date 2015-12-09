@@ -144,6 +144,7 @@ return [
         Maps\Providers\AuthServiceProvider::class,
         Maps\Providers\EventServiceProvider::class,
         Maps\Providers\RouteServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
     ],
 

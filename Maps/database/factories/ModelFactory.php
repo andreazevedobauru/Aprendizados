@@ -20,11 +20,10 @@ $factory->define(Maps\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(Maps\User::class, function (Faker\Generator $faker) {
+$factory->define(Maps\Entities\Imovel::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->email,
-        'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'titulo' => $faker->address,
+        'lat' => $faker->latitude,
+        'lng' => $faker->longitude,
     ];
 });
