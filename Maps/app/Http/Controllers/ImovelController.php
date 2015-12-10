@@ -4,6 +4,7 @@ namespace Maps\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Maps\Entities\Imovel;
 use Maps\Http\Requests;
 use Maps\Http\Controllers\Controller;
 
@@ -16,7 +17,10 @@ class ImovelController extends Controller
      */
     public function index()
     {
-
+        $imoveis = Imovel::all();
+        //var_dump($imoveis);
+        //exit();
+        return view('show', array('imoveis'=>$imoveis));
     }
 
     /**
