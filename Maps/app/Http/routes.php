@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('imoveis', 'ImovelController@index');
+Route::resource('imoveis', 'ImovelController');

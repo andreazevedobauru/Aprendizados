@@ -27,9 +27,13 @@
     </style>
 </head>
 <body>
+@if (Session::has('message'))
+    <div class="alert alert-info">{{ Session::get('message') }}</div>
+@endif
 <a href="/cadastrar" >Cadastrar Imovel</a>
 
-<form action="">
+<form action="/imoveis" method="post">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     Titulo
     <input type="text" name="titulo" id="titulo" />
     <br />
@@ -38,6 +42,7 @@
     <br />
     Lng
     <input type="text"  name="lng" id="lng" />
+    <input type="submit" value="Enviar">
 
 </form>
 <div id="map" style="width:500px;"></div>

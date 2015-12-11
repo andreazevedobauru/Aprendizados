@@ -4,6 +4,8 @@ namespace Maps\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Maps\Entities\Imovel;
 use Maps\Http\Requests;
 use Maps\Http\Controllers\Controller;
@@ -41,7 +43,9 @@ class ImovelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Imovel::create($request->all());
+        Session::flash('message', 'Imovel cadastrado com sucesso!');
+        return Redirect::to('imoveis');
     }
 
     /**

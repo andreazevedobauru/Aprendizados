@@ -10,7 +10,7 @@ class Imovel extends Model implements Transformable
 {
     use TransformableTrait;
 
-    protected $fillable = [];
+    protected $fillable = ['titulo','lat','lng'];
     protected $table = 'imovel';
 
 
