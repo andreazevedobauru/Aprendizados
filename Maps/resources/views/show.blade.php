@@ -30,7 +30,7 @@
 @if (Session::has('message'))
     <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
-<a href="/cadastrar" >Cadastrar Imovel</a>
+<a href="/cadastrar" >Cadastrar Imovelll</a>
 
 <form action="/imoveis" method="post">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -70,8 +70,8 @@
 
         var marker = new google.maps.Marker({
             position: pos,
-            animation: google.maps.Animation.BOUNCE,
-            icon: 'img/marker.png'
+            animation: google.maps.Animation.BOUNCE//,
+            //icon: 'img/marker.png'
         });
 
         marker.setMap(map);
@@ -125,7 +125,7 @@ function initMap() {
 
             var marker = new google.maps.Marker({
                 position : new google.maps.LatLng(imovel.lat, imovel.lng),
-                icon:'img/marker.png',
+                //icon:'img/marker.png',
                 html: html
             });
 
