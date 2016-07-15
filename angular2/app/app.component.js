@@ -51,7 +51,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{ title }}</h1>\n        <input type=\"text\" [(ngModel)]=\"title\">\n        <ul>\n            <li *ngFor=\"let t of tasks\" (click)=\"onClick(t)\">{{t.name}}</li>\n        </ul>\n        <task-edit [task]=\"selectedTask\"></task-edit>\n    ",
+            template: "\n        <h1 [id]=\"title\" >{{ title }}</h1>\n        <ul>\n            <li *ngFor=\"let t of tasks\" (click)=\"onClick(t)\">{{t.name}}</li>\n        </ul>\n        <task-edit [task]=\"selectedTask\"></task-edit>\n        <input type=\"text\" name=\"name1\" ([ngModel])=\"title\"/>\n        <input type=\"text\" name=\"name2\" [ngModel]=\"title\" (ngModelChange)=\"title=$event\"/>\n        [] Property Binding\n        () Event Binding\n    ",
             directives: [TaskEdit]
         }), 
         __metadata('design:paramtypes', [])
